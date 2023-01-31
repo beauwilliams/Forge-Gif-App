@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: giphy
+      function: main
+      title: My-GIPHY-App
+      description: Inserts a random gif!
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/5e5c5025-e4fa-493c-9107-55d770522527
+  name: fomo-giphy-generator
+permissions:
+  scopes: []
+  external:
+    fetch:
+      backend:
+        - 'api.giphy.com'
